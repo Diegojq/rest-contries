@@ -1,0 +1,19 @@
+:root {
+  --DarkBlue: #2b3845;
+  --VeryDarkBlue: #202c36;
+  --VeryDarkBlue2: #111517;
+  --DarkGray: #848484;
+  --VeryLightGray: #f9f9f9;
+  --White: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nunito Sans";
+}
