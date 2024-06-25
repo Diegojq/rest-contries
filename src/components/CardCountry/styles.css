@@ -1,0 +1,39 @@
+.wrapperCountry {
+  width: 26.4rem;
+  height: 33.6rem;
+  margin: 0 auto;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  background-color: var(--DarkBlue);
+  box-shadow: 0px 0px 7px 2px #00000008;
+}
+
+.wrapperCountry__image {
+  width: 26.4rem;
+  height: 16rem;
+  object-fit: cover;
+}
+
+.wrapperDetail {
+  padding-left: 2.4rem;
+}
+
+.wrapperDetail__title {
+  margin: 2.4rem 0 1.6rem 0;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.wrapperDetail__item {
+  margin-bottom: 0.8;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.wrapperDetail__item span {
+  margin-left: 0.3rem;
+  font-weight: 300;
+}
+
+@media (min-width: 1024px) {
+}
