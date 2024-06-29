@@ -6,6 +6,11 @@
   margin: 0 auto;
 }
 
+.linkCountry {
+  text-decoration: none;
+  color: currentColor;
+}
+
 @media (min-width: 1024px) {
   .wrapperFlags {
     grid-template-columns: repeat(auto-fit, 26.4rem);
