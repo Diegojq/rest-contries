@@ -64,6 +64,11 @@
   margin: 0 auto;
 }
 
+.linkCountry {
+  text-decoration: none;
+  color: currentColor;
+}
+
 @media (min-width: 1024px) {
   .search {
     max-width: 134rem;
