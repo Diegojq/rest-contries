@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { countries } from "../../api/countries";
 import { CardCountry } from "../../components/CardCountry";
 import { CustomSelect } from "../../components/CustomSelect";
@@ -23,16 +24,6 @@ export const Home = () => {
     });
     setFilteredCountries(results);
   }, [searchByTitle, searchByCategory]);
-
-  const renderView = () => {
-    if (filteredCountries.length > 0) {
-      return filteredCountries.map((country) => (
-        <CardCountry key={country.alpha2Code} country={country} />
-      ));
-    } else {
-      return <div>Elemento no encontrado</div>;
-    }
-  };
 
   const options = [
     { value: "/", label: "Filter By Region" },
@@ -62,20 +53,18 @@ export const Home = () => {
             onChange={(event) => setsearchByCategory(event.target.value)}
           />
         </div>
-
-        {/*         <select
-          className="search__select"
-          value={searchByCategory}
-          onChange={(event) => setsearchByCategory(event.target.value)}
-        >
-          <option value="Africa">Africa</option>
-          <option value="Americas">America</option>
-          <option value="Asia">Asia</option>
-          <option value="Europe">Europe</option>
-          <option value="Oceania">Oceania</option>
-        </select> */}
       </div>
-      <div className="wrapperFlags">{renderView()}</div>
+      <div className="wrapperFlags ">
+        {filteredCountries.map((country) => (
+          <Link
+            className="linkCountry"
+            key={country.alpha2Code}
+            to={`/country/${country.alpha2Code}`}
+          >
+            <CardCountry country={country} />
+          </Link>
+        ))}
+      </div>
     </section>
   );
 };
