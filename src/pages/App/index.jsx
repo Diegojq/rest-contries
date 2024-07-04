@@ -9,6 +9,7 @@ function App() {
       { path: "/", element: <Home /> },
       { path: "/country/:alpha2Code", element: <DetailCountry /> },
     ]);
+
     return routes;
   };
   return (
