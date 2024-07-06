@@ -26,7 +26,6 @@ export const Home = () => {
   }, [searchByTitle, searchByCategory]);
 
   const options = [
-    { value: "/", label: "Filter By Region" },
     { value: "Africa", label: "Africa" },
     { value: "Americas", label: "America" },
     { value: "Asia", label: "Asia" },
@@ -50,7 +49,7 @@ export const Home = () => {
           <CustomSelect
             label="Filter By Region"
             options={options}
-            onChange={(event) => setsearchByCategory(event.target.value)}
+            onChange={(value) => setsearchByCategory(value)}
           />
         </div>
       </div>
