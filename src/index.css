@@ -1,10 +1,14 @@
 :root {
   --DarkBlue: #2b3845;
   --VeryDarkBlue: #202c36;
-  --VeryDarkBlue2: #111517;
   --DarkGray: #848484;
-  --VeryLightGray: #f9f9f9;
   --White: #ffffff;
+}
+
+[data-theme="light"] {
+  --DarkBlue: #ffffff;
+  --VeryDarkBlue: #f9f9f9;
+  --White: #111517;
 }
 
 * {
