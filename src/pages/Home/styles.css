@@ -38,8 +38,9 @@
 
 .wrapperFlags {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  grid-template-columns: repeat(auto-fit, 26.4rem);
   gap: 4rem;
+  justify-content: center;
   padding: 0 8rem;
   margin: 0 auto;
 }
@@ -71,7 +72,6 @@
 
   .wrapperFlags {
     max-width: 150rem;
-    grid-template-columns: repeat(auto-fit, 26.4rem);
     justify-content: center;
     gap: 7.5rem;
   }
