@@ -1,9 +1,9 @@
 import { useRoutes, BrowserRouter } from "react-router-dom";
-import { Header } from "../../components/Header";
-import { Home } from "../Home";
-import { DetailCountry } from "../DetailCountry";
+import { Header } from "../components/Header";
+import { Home } from "../pages/Home";
+import { DetailCountry } from "../pages/DetailCountry";
 
-function App() {
+function Router() {
   const AppRoutes = () => {
     let routes = useRoutes([
       { path: "/", element: <Home /> },
@@ -13,13 +13,11 @@ function App() {
     return routes;
   };
   return (
-    <>
-      <BrowserRouter>
-        <Header />
-        <AppRoutes />
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Header />
+      <AppRoutes />
+    </BrowserRouter>
   );
 }
 
-export default App;
+export { Router };

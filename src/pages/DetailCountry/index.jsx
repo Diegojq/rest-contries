@@ -8,7 +8,7 @@ export const DetailCountry = () => {
 
   const navigate = useNavigate();
   return (
-    <div className="detail">
+    <section className="detail">
       <div className="detailCountry__wrapperButton">
         <button
           className="detailCountry__backButton"
@@ -103,6 +103,6 @@ export const DetailCountry = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

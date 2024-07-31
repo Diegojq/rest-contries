@@ -1,5 +1,5 @@
 import "./styles.css";
-import { useTheme } from "../ThemeContext";
+import { useTheme } from "../../provider";
 
 export const Header = () => {
   const { toggleTheme } = useTheme();
