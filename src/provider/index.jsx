@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect, useContext } from "react";
 
-const ThemeContext = createContext();
+const router = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("dark");
@@ -13,10 +13,8 @@ export const ThemeProvider = ({ children }) => {
   }, [theme]);
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {children}
-    </ThemeContext.Provider>
+    <router.Provider value={{ theme, toggleTheme }}>{children}</router.Provider>
   );
 };
 
-export const useTheme = () => useContext(ThemeContext);
+export const useTheme = () => useContext(router);
